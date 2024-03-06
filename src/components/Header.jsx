@@ -3,7 +3,11 @@ import React from "react";
 const Header = () => {
     return (
         <div className="header">
-            <h1>Mon header</h1>
+            <img src="./images/LOGO.svg"></img>
+            <nav>
+            <ul>Acceuil</ul>
+            <ul>A propos</ul>
+            </nav>
         </div>
     );  
 };
