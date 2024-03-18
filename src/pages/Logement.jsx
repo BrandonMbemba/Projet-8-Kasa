@@ -3,8 +3,6 @@ import { useParams } from 'react-router-dom';
 import logements from '../data/logements.json';
 import Description from '../components/Description';
 import Equipements from '../components/Equipements';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
 import Ratings from '../components/Ratings';
 import { Navigate } from 'react-router-dom';
 
@@ -41,7 +39,7 @@ const Logement = () => {
                 <div className='description'>
                     <Description />
                 </div>
-                <div className='description'>
+                <div className='equipements'>
                     <Equipements />
                 </div>  
             </div>

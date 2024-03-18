@@ -1,5 +1,7 @@
 .accordion {
     font-family: "Montserrat", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
     .description {
         margin-left: 10%;
         display: flex;
@@ -17,6 +19,27 @@
             cursor: pointer;
             text-align: left;
             width: 35vw;
+            height: 6vh;
+        }
+    }
+    .equipements {
+        margin-left: 10%;
+        display: flex;
+        width: 35vw;
+        button {
+            background-color: #FF6060;
+            color: white;
+            font-size: 20px;
+            font-weight: 500;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            cursor: pointer;
+            text-align: left;
+            width: 35vw;
+            height: 6vh;
         }
     }
 }
