@@ -1,10 +1,19 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements.json';
+import Description from '../components/Description';
+import Equipements from '../components/Equipements';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+import Ratings from '../components/Ratings';
+import { Navigate } from 'react-router-dom';
+
 
 const Logement = () => {
     const {id} = useParams();
      const logement = logements.find((logement) => logement.id === (id));
+    if (!logement) {
+        return <Navigate to="/Error404" />;}
     return  (
         <div className='logement'>
             <img src={logement.cover} alt= {logement.description} />
@@ -25,11 +34,16 @@ const Logement = () => {
                     ))}
                 </div>
                 <div className='ratings'>
-                    <p>{logement.rating}</p>
+                    <Ratings nbStars = {logement.rating} />
                 </div>
             </div>
-            <div>
-
+            <div className='accordion'>
+                <div className='description'>
+                    <Description />
+                </div>
+                <div className='description'>
+                    <Equipements />
+                </div>  
             </div>
         </div>
     );

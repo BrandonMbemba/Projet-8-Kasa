@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements.json';
 
-const Description = () => {
+const Equipements = () => {
     const { id } = useParams();
     const logement = logements.find(logement => logement.id === id);
 
@@ -17,15 +17,17 @@ const Description = () => {
     return (
         <div className="accordion">
             <button onClick={toggleAccordion}>
-                {isAccordionOpen ? 'Description' : 'Description'}
+                {isAccordionOpen ? 'Equipements' : 'Equipements'}
             </button>
             {isAccordionOpen && (
                 <div>
-                    <p>{logement.description}</p>
+                    {logement.equipments.map((equipement, index) => (
+                    <p key={index}>{equipement}</p>
+                    ))}
                 </div>
             )}
         </div>
     );
 };
 
-export default Description;
+export default Equipements;
