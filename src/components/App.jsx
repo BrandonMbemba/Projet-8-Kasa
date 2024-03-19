@@ -18,9 +18,9 @@ const App = () => {
         <Route path="*" element={<Error404 />} />
         <Route path="/Error404" element={<Error404 />} />
       </Routes>
-      <Footer />;
+      <Footer />
     </BrowserRouter>
-  );
+  )
 };
 
 export default App;

@@ -45,6 +45,7 @@
         display: flex;
         justify-content: space-between;
         font-family: "Montserrat", sans-serif;
+        align-items: baseline;
         .tags {
             display: flex;
             gap: 10%;
@@ -56,6 +57,10 @@
                 background-color: #FF6060;
                 font-weight: 500;
                 font-size: 14px;
+                padding: 5px;
+                width: 13vw;
+                border-radius: 5px;
+                justify-content: center;
             }
         }
         .ratings {
