@@ -1,0 +1,24 @@
+.image-carousel {
+    display: flex;
+    justify-content: center;
+    .fa-chevron-left {
+        position: absolute;
+        top: 35vh;
+        left: 15vw;
+        font-size: 80px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    .fa-chevron-right {
+        position: absolute;
+        top: 35vh;
+        right: 15vw;
+        font-size: 80px;
+        color: white;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}

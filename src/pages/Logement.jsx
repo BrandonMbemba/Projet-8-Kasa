@@ -1,10 +1,14 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements.json';
 import Description from '../components/Description';
 import Equipements from '../components/Equipements';
 import Ratings from '../components/Ratings';
 import { Navigate } from 'react-router-dom';
+import Carousel from '../components/Carousel';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+
 
 
 const Logement = () => {
@@ -14,7 +18,7 @@ const Logement = () => {
         return <Navigate to="/Error404" />;}
     return  (
         <div className='logement'>
-            <img src={logement.cover} alt= {logement.description} />
+            <Carousel images={logement.pictures}/>
             <div className='locationAndInfo'>
                 <div className='location'>
                     <h1>{logement.title}</h1>
