@@ -1,13 +1,10 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useParams } from 'react-router-dom';
 import logements from '../data/logements.json';
-import Description from '../components/Description';
-import Equipements from '../components/Equipements';
 import Ratings from '../components/Ratings';
 import { Navigate } from 'react-router-dom';
 import Carousel from '../components/Carousel';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronLeft, faChevronRight } from '@fortawesome/free-solid-svg-icons';
+import Accordion from '../components/Accordion';
 
 
 
@@ -41,10 +38,10 @@ const Logement = () => {
             </div>
             <div className='accordion'>
                 <div className='description'>
-                    <Description />
+                    <Accordion title= 'Description' content={logement.description} />
                 </div>
                 <div className='equipements'>
-                    <Equipements />
+                    <Accordion title = 'Equipements' content = {logement.equipments.map((equipment, index) => (<p key={index}>{equipment}</p>))} />
                 </div>  
             </div>
         </div>

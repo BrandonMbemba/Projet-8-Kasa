@@ -20,6 +20,8 @@
             text-align: left;
             width: 35vw;
             height: 6vh;
+            display: flex;
+            justify-content: space-between;
         }
     }
     .equipements {
@@ -40,6 +42,8 @@
             text-align: left;
             width: 35vw;
             height: 6vh;
+            display: flex;
+            justify-content: space-between;
         }
     }
 }
