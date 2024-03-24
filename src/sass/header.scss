@@ -27,3 +27,17 @@
         }
     }
 }}
+
+@media (max-width :767.98px) {
+    .header {
+        gap: 0;
+        width: 90vw;
+        img {
+            margin-top: 0px;
+            height: 6vh;
+        }
+        li {
+            font-size: 11px;
+        }
+    }
+}

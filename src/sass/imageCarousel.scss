@@ -22,3 +22,23 @@
         cursor: pointer;
     }
 }
+
+@media (max-width :767.98px) {
+    .image-carousel {
+        img {
+            height: 40vh;
+            width: 90vw;
+            border-radius: 2%;
+        }
+        .fa-chevron-left {
+            top: 25vh;
+            left: 5vw;
+            font-size: 40px;
+        }
+        .fa-chevron-right {
+            top: 25vh;
+            right: 5vw;
+            font-size: 40px;
+        }
+    }
+}   

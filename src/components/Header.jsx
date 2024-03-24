@@ -7,12 +7,12 @@ const Header = () => {
             <img src="./images/LOGO.svg"></img>
             <nav>
                 <ul>
-                <NavLink to = "/" className={({isActive}) => (isActive ? "underline" : "")}>
-                    <li>Acceuil</li>
-                </NavLink>
-                <NavLink to = "/about" className={({isActive}) => (isActive ? "underline" : "")}>
-                    <li>A propos</li>
-                </NavLink>
+                    <NavLink to = "/" className={({isActive}) => (isActive ? "underline" : "")}>
+                        <li>Acceuil</li>
+                    </NavLink>
+                    <NavLink to = "/about" className={({isActive}) => (isActive ? "underline" : "")}>
+                        <li>A propos</li>
+                    </NavLink>
                 </ul>
             </nav>
         </div>

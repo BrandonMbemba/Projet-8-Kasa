@@ -15,7 +15,11 @@ const Logement = () => {
         return <Navigate to="/Error404" />;}
     return  (
         <div className='logement'>
-            <Carousel images={logement.pictures}/>
+            {logement.pictures.length === 1 ? (
+                <img src={logement.pictures[0]} alt="Logement" />
+            ) : (
+                <Carousel images={logement.pictures} />
+            )}
             <div className='locationAndInfo'>
                 <div className='location'>
                     <h1>{logement.title}</h1>

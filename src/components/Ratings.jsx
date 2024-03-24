@@ -8,7 +8,7 @@ const numbers = [1, 2, 3, 4, 5];
 const Ratings = ({nbStars}) => {
     return (
         <div>
-            {numbers.map((number,) => 
+            {numbers.map((number) => 
             (  <FontAwesomeIcon key={number} icon={faStar} color= {number <= nbStars ? "#FF6060" : "grey" } />
             ))}
         </div> 

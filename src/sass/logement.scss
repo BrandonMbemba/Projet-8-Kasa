@@ -70,3 +70,38 @@
         }
     }
 }
+
+@media (max-width :767.98px) {
+    .logement {
+        margin-top: 5%;
+        .locationAndInfo {
+            flex-direction: column;
+            .location {
+                max-width: unset;
+                margin-left: 3%;
+            }
+            .info {
+                position : relative;
+                top: 6vh;
+                left: 50vw;
+                margin-right: 10%;
+            }
+        }
+        .tagsAndRatings {
+            flex-direction: column;
+            position: relative;
+            top: -65px;
+            .tags {
+                margin-left: 3%;
+                gap: 1%;
+                p {
+                    width: 20vw;
+                    font-size: 9px;
+                };
+            }
+            .ratings {
+                margin-top: 8%;
+            }
+        }
+    }
+}

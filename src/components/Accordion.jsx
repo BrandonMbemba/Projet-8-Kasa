@@ -8,20 +8,19 @@ const Accordion = ({title, content}) => {
 
     // Fonction pour basculer l'état de l'accordéon
 
-    const toggleAccordion = () => {setIsAccordionOpen(!isAccordionOpen);
-    };
+    const toggleAccordion = () => {setIsAccordionOpen(!isAccordionOpen); };
     return (
         <div>
-        <button onClick={toggleAccordion}>
-            {title}
-            {isAccordionOpen ? <FontAwesomeIcon icon = {faChevronUp} /> :<FontAwesomeIcon icon = {faChevronDown} />}
-        </button>
-        {isAccordionOpen && (
-            <div>
-                {content}
-            </div>
-        )}
-    </div>
+            <button onClick={toggleAccordion}>
+                {title}
+                {isAccordionOpen ? <FontAwesomeIcon icon = {faChevronUp} /> :<FontAwesomeIcon icon = {faChevronDown} />}
+            </button>
+            {isAccordionOpen && (
+                <div className='grey'>
+                    {content}
+                </div>
+            )}
+        </div>
     );
 };
 

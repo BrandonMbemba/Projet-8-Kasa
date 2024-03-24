@@ -46,4 +46,28 @@
             justify-content: space-between;
         }
     }
+    .grey {
+        background-color: #fafafa;
+        padding: 7%;
+    }
+}
+
+@media (max-width :767.98px) {
+    .accordion {
+        flex-direction: column;
+        .description {
+            margin-left: 3%;
+            width: 80vw;
+            button {
+                width: 90vw;
+            }
+        }
+        .equipements {
+            width: 80vw;
+            margin-left: 3%;
+            button {
+                width: 90vw;
+            }
+        }
+    }
 }
