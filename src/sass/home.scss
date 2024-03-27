@@ -33,9 +33,6 @@
         margin-top: 20px;
         background-color: #f6f6f6;
         padding: 50px;
-            a {
-                background: linear-gradient(180deg, #ff6060 0%, #FF6060 82%, #000000 214.99%, #000000 100%)
-            }
 
 }}
 
@@ -43,7 +40,7 @@
     .home {
         margin-top: 15px;
         .banner {
-            width: 100vw;
+            width: 85vw;
             height: 15vh;
             h1 {
                 left: 5%;
@@ -58,6 +55,7 @@
             max-width: 767.98px;
             display: flex;
             flex-direction: column;
+            width: 58vw;
         }
     }
 }

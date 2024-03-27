@@ -1,5 +1,5 @@
 import React from 'react';
-import Imagehome from '/images/e270fc8fc902a1eb738458e7b29c1899.jpeg';
+import Imagehome from '../assets/e270fc8fc902a1eb738458e7b29c1899.jpeg';
 import Thumb from '../components/Thumb';
 import logements from '../data/logements.json';
 

@@ -1,16 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import ImageHeader from "../assets/LOGO.svg";
 
 const Header = () => {
     return (
         <div className="header">
-            <img src="./images/LOGO.svg"></img>
+            <img src= {ImageHeader} alt="Logo"></img>
             <nav>
                 <ul>
-                    <NavLink to = "/" className={({isActive}) => (isActive ? "underline" : "")}>
+                    <NavLink to="/" className={({isActive}) => (isActive ? "underline" : "")}>
                         <li>Acceuil</li>
                     </NavLink>
-                    <NavLink to = "/about" className={({isActive}) => (isActive ? "underline" : "")}>
+                    <NavLink to="/about" className={({isActive}) => (isActive ? "underline" : "")}>
                         <li>A propos</li>
                     </NavLink>
                 </ul>

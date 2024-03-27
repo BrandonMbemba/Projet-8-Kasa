@@ -20,6 +20,7 @@ const Carousel = ({ images }) => {
                 <FontAwesomeIcon icon={faChevronLeft} onClick={prevImage} />
                 <FontAwesomeIcon icon={faChevronRight} onClick={nextImage} />
             </div>
+            <div className="pagination-text">{currentImageIndex + 1}/{images.length}</div>
         </div>
     );
 };

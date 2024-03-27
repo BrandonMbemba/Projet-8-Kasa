@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageAbout from '/images/b9995860bb6384a77ca7dc9bf52da3be.jpg';
+import ImageAbout from '../assets/b9995860bb6384a77ca7dc9bf52da3be.jpg';
 import Accordion from '../components/Accordion';
 
 const About = () => {

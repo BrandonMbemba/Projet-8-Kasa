@@ -1,9 +1,10 @@
 import React from 'react';
+import ImageFooter from '../assets/LOGO2.svg';
 
 const Footer = () => {
     return (
         <div className='footer'>
-            <img src= './images/LOGO2.svg' alt='logo' />
+            <img src= {ImageFooter} alt='logo' />
             <p>© 2020 Kasa. All rights reserved</p>
         </div>
     );
